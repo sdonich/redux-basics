@@ -18,7 +18,7 @@ function List(props) {
 						onEdit={props.onEdit}
 					/>)
 				:
-				<div className="loading">Загрузка...</div>
+				<div className="loading">Loading...</div>
 			}
 		</section>
 	);

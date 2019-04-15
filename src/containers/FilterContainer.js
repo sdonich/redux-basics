@@ -4,15 +4,15 @@ import { setFilter } from '../actions';
 import Filter from '../components/Filter';
 
 function mapStateToProps(state) {
-    return {
-        activeFilter: state.filter
-    };
+	return {
+		activeFilter: state.filter
+	};
 }
 
 function mapDispatchToProps(dispatch) {
-    return {
-        onSetFilter: filter => dispatch(setFilter(filter))
-    };
+	return {
+		onSetFilter: filter => dispatch(setFilter(filter))
+	};
 }
 
 const FilterContainer = connect(mapStateToProps, mapDispatchToProps)(Filter);
